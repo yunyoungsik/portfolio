@@ -1,0 +1,25 @@
+.slider.s1.sub {
+    padding: 35px 40px 45px;
+}
+
+.sub__top {
+    height: 20%;
+}
+.sub__center {
+    height: 60%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.sub__center .title {
+    font-size: 48px;
+    font-family: var(--font-noto);
+    font-weight: 700;
+}
+.sub__center .desc {
+    font-size: 16px;
+    font-family: var(--font-gamarket);
+}
+.sub__bottom {
+    height: 20%;
+}

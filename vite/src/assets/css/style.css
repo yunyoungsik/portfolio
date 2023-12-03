@@ -7,4 +7,5 @@
 @import "_common.css";
 
 /* section */
-@import "section/_main.css"
+@import "section/_main.css";
+@import "section/_sub.css"
