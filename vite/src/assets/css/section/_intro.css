@@ -1,114 +1,27 @@
-.mainSlider.intro {
+.centerSlider.intro {
     width: 100%;
-}
-
-.logo.intro {
-    opacity: 0;
-}
-
-.pause.intro {
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.center__text.intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.center__text.intro .descSlider {
-    visibility: hidden
-}
-
-.center__img.intro {
-    width: 100%;
-    height: 100vh;
-}
-
-.bgSliderWrap.intro {
-    width: 100%;
-}
-
-/* .intro__inner {
-    width: 100%;
-    height: 100vh;
-    padding: 35px 40px 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.intro__inner .title {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.intro__inner .title .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 72px;
-    overflow: hidden;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-}
-
-.intro__inner .title .text p {
-    font-size: 48px;
-    font-weight: 700;
-    font-family: var(--font-noto);
-    color: var(--black);
-    opacity: 0;
-    transform: translateY(72px);
-    mix-blend-mode: difference;
-}
-
-.intro__inner .title .titleBg {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.intro__inner .title .titleBg .titleBg__inner {
-    width: 600%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-}
-
-.intro__inner .title .titleBg .titleBg__inner .img {
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.titleBg__inner .img.s1 {
+.mainSlider__center>.center__img>.centerSliderWrap>.centerSlider.s1.intro {
+    transform: translateX(0);
     background-image: url(../../img/main01.jpg);
 }
-
-.titleBg__inner .img.s2 {
+.mainSlider__center>.center__img>.centerSliderWrap>.centerSlider.s2.intro {
+    transform: translateX(0);
     background-image: url(../../img/main02.jpg);
 }
-
-.titleBg__inner .img.s3 {
+.mainSlider__center>.center__img>.centerSliderWrap>.centerSlider.s3.intro {
+    transform: translateX(0);
     background-image: url(../../img/main03.jpg);
 }
-
-.titleBg__inner .img.s4 {
+.mainSlider__center>.center__img>.centerSliderWrap>.centerSlider.s4.intro {
+    transform: translateX(0);
     background-image: url(../../img/main04.jpg);
 }
-
-.titleBg__inner .img.s5 {
+.mainSlider__center>.center__img>.centerSliderWrap>.centerSlider.s5.intro {
+    transform: translateX(0);
     background-image: url(../../img/main05.jpg);
-} */
+}
