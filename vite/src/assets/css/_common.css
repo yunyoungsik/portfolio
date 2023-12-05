@@ -33,7 +33,7 @@
     color: var(--white);
 }
 
-.about:after {
+.underline:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -46,7 +46,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.about:hover::after {
+.underline:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }

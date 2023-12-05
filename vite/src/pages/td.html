@@ -18,7 +18,15 @@
             data-v-c5fc2e64=""></path>
         </svg>
       </a>
-      <a href="../pages/about.html" class="about">About</a>
+      <a href="../pages/about.html" class="about underline">About</a>
+      <div class="subPage">
+        <span class="current sub">
+          <span class="pageIndex 01">01</span>
+        </span>
+      </div>
+      <div class="scrollBar">
+        <progress max="100" value="0"></progress>
+      </div>
 
       <div class="mainSlider" id="mainSlider">
         <div class="mainSlider__top">
@@ -54,9 +62,10 @@
             </div>
           </div>
         </div>
-        <div class="mainSlider__bottom">
+        <div class="mainSlider__bottom sub">
           <div class="page">
             <span class="current">
+              <span class="pageIndex 01">01</span>
               <span class="pageIndex 01">01</span>
             </span>
             <span class="pageLine">―</span>
@@ -81,25 +90,66 @@
       <div class="bgSlider" id="parallax__cont">
 
         <div class="bgSliderWrap">
-          <div class="slider s1 parallax__item sub">
-            <div class="sub__top"></div>
+          <div class="slider s1 parallax__item sub subFilter">
             <div class="sub__center">
               <div class="text">
-                <div class="title">
-                  Trend Device
+                <div class="titleWrap">
+                  <div class="subTitle">
+                    Trend Device
+                  </div>
                 </div>
-                <div class="desc">
-                  Trend Device는 직관적이고 사용하기 편리한 인터페이스를 제공하여<br/>
-                  사용자가 원하는 휴대폰 모델을 선택하고, 선택한 모델들을 한눈에 비교할 수 있도록 합니다.<br/>
+                <div class="subDesc">
+                  Trend Device는 직관적이고 사용하기 편리한 인터페이스를 제공하여<br />
+                  사용자가 원하는 휴대폰 모델을 선택하고, 선택한 모델들을 한눈에 비교할 수 있도록 합니다.<br />
                   각 휴대폰 모델에는 사진, 기술 사양, 가격 등의 정보가 제공되어 사용자가 원하는 정보를 쉽게 찾을 수 있습니다.
                 </div>
               </div>
             </div>
-            <div class="sub__bottom"></div>
-          </div>
-          <div class="slider s1 parallax__item">
           </div>
           <div class="slider s1 parallax__item"></div>
+          <div class="slider s1 parallax__item subFilter">
+            <div class="sub__center">
+              <div class="section">
+                #1
+              </div>
+              <div class="info">
+                <div class="info__inner">
+                  <h2>Website</h2>
+                  <div class="coding">
+                    <h3>(coding)</h3>
+                    <p>PHP, Javascript</p>
+                  </div>
+                  <div class="workTime">
+                    <h3>(workTime)</h3>
+                    <p>2 Weeks</p>
+                  </div>
+                  <div class="link">
+                    <div class="link1">
+                      <a href="#" class="underline">
+                        <i>Link</i>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          data-v-50e346e1="">
+                          <path
+                            d="M2.66949 45L0 42.3305L38.5169 3.81356H3.05085V0H45V41.9492H41.1864V6.48305L2.66949 45Z"
+                            fill="currentColor" data-v-50e346e1=""></path>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="link2">
+                    </div>
+                    <a href="#" class="underline">
+                      <i>Github</i>
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        data-v-50e346e1="">
+                        <path d="M2.66949 45L0 42.3305L38.5169 3.81356H3.05085V0H45V41.9492H41.1864V6.48305L2.66949 45Z"
+                          fill="currentColor" data-v-50e346e1=""></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="slider s1 parallax__item"></div>
           <div class="slider s1 parallax__item"></div>
           <div class="slider s1 parallax__item"></div>
@@ -107,7 +157,8 @@
       </div>
     </main>
   </div>
-  <script type="module" src="../assets/script/main.js"></script>
+
+  <script type="module" src="../assets/script/sub.js"></script>
 </body>
 
 </html>

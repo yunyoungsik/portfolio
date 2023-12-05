@@ -11,4 +11,16 @@ export function subSlider() {
         ease: "slow",
         display: "none",
     });
+
+    const subAni = gsap.timeline();
+
+    subAni.fromTo(".sub__center .subTitle", { y: 72, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "power1.inOut" })
+    subAni.fromTo(".sub__center .subDesc", { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 2, ease: "power1.inOut" })
+    subAni.fromTo([".current.sub", ".scrollBar"], { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut" })
+
+    gsap.to("progress", {
+        value: 100,
+        ease: "none",
+        scrollTrigger: { scrub: 0.3 }
+    });
 }
