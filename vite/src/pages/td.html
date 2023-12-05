@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Y - Trend Device</title>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css">
 </head>
 
 <body>
@@ -89,7 +90,7 @@
       </div>
       <div class="bgSlider" id="parallax__cont">
 
-        <div class="bgSliderWrap">
+        <div class="bgSliderWrap sub">
           <div class="slider s1 parallax__item sub subFilter">
             <div class="sub__center">
               <div class="text">
@@ -106,8 +107,8 @@
               </div>
             </div>
           </div>
-          <div class="slider s1 parallax__item"></div>
-          <div class="slider s1 parallax__item subFilter">
+          <div class="slider s1 parallax__item sub"></div>
+          <div class="slider s1 parallax__item sub subFilter">
             <div class="sub__center">
               <div class="section">
                 #1
@@ -150,14 +151,84 @@
               </div>
             </div>
           </div>
-          <div class="slider s1 parallax__item"></div>
-          <div class="slider s1 parallax__item"></div>
-          <div class="slider s1 parallax__item"></div>
+          <div class="slider s1 parallax__item sub subFilter">
+            <div class="sub__center">
+              <div class="desc">
+                <h2>Description</h2>
+                <p>
+                  <span>메인페이지</span>
+                  슬라이드는 Javascript를 사용하여 슬라이드 기능을 구현하고 GSAP와 Scroll Triger를 사용하여 각 섹션에 이미지와 어울리는 움직임을 표현하려고 했습니다.
+
+                  <span>상품페이지</span>
+                  핸드폰 정보가 들어있는 배열에서 각 핸드폰 정보를 꺼내어 처리하는데, 이를 foreach 루프로 수행합니다.
+                  각 핸드폰 정보는 리스트 아이템(&lt;li&gt;)으로 만들어지며, 링크(&lt;a&gt;)와 이미지(&lt;img&gt;)를 포함합니다. 이미지를 가져오며, 제품 이름은 alt
+                  속성에 들어갑니다.
+                  나머지 핸드폰 정보인 제목, 설명, 가격 등은 &lt;div class="text"&gt; 안에 &lt;p&gt;와 &lt;span&gt; 태그를 사용하여 표시됩니다.
+
+                  <span>비교하기페이지</span>
+                  드롭다운 메뉴에서 변경 사항이 감지되면 이벤트를 트리거합니다. 이벤트는 선택된 옵션의 값을 기반으로 데이터를 필터링하고,해당 데이터에서 선택된 값을 기준으로 정보를 가져와
+                  화면에 표시하는 역할을 합니다. 이벤트는 선택된 옵션의 값을 기반으로 데이터를 필터링하고, 해당 데이터에서 선택된 값을 기준으로 정보를 가져와 화면에 표시합니다.
+
+                  <span>로그인</span>
+                  사용자가 입력한 이메일과 비밀번호를 수집하여 이메일과 비밀번호로 데이터베이스에 저장된 회원 정보를 확인하기 위해 테이블에서 해당하는 데이터를 조회하는 SQL 쿼리를 생성합니다.
+                  작성한 SQL 쿼리를 데이터베이스에 전달하고 실행합니다. 실행된 쿼리 결과를 확인하고 해당 결과를 기반으로 로그인 처리를 진행합니다.
+
+                  그 밖에 ‘회원가입’, ‘게시판 글쓰기, 수정, 삭제’, ‘댓글’, ‘마이페이지 비밀번호 변경, 전화번호 변경, 생년월일 변경, 프로필사진 변경, 위시리스트’, ‘회원탈퇴’ 기능이
+                  구현되어 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider s1 parallax__item sub subFilter">
+            <div class="sub__center">
+              <div class="trouble">
+                <div class="trouble__inner">
+                  <h2>Trouble Shooting</h2>
+                  <p>
+                    <span>문제</span>
+                    <span>해결</span>
+<pre><code class="language-js">
+// 정답 확인하기
+quizConfirm.addEventListener("click", () => {
+    const userAnswer = quizInput.value;
+    
+    if(infoAnswer == userAnswer){
+        quizAnimation.classList.add("like");
+    } else {
+        quizAnimation.classList.add("dislike");
+    }
+    quizAnswer.classList.remove("none");
+    quizDesc.classList.remove("none");
+    quizConfirm.classList.add("none");
+    quizInput.classList.add("none");
+});
+</code></pre>
+                  </p>
+                </div>
+              </div>
+              <div class="subNext">
+                <div class="subNext__inner">
+                  <span>
+                    <a href="./youtube.html">(next)</a>
+                  </span>
+                  <h2>
+                    <a href="./youtube.html">YouTube →</a>
+                  </h2>
+                  <span>
+                    <a href="../index.html">(main)</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
   </div>
-
+  <!-- highlight.js의 JavaScript 파일 로드 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <!-- highlight.js 초기화 -->
+  <script>hljs.highlightAll();</script>
   <script type="module" src="../assets/script/sub.js"></script>
 </body>
 
